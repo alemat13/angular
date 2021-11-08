@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Pokemon } from './pokemon';
 import { POKEMONS } from './mock-pokemons';
@@ -10,7 +9,7 @@ import { POKEMONS } from './mock-pokemons';
 })
 export class AppComponent implements OnInit  {
 
-  private pokemons: Pokemon[];
+  private pokemons: Pokemon[] = null;
 
   ngOnInit() {
     this.pokemons = POKEMONS;
