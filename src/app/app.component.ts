@@ -15,6 +15,11 @@ export class AppComponent implements OnInit  {
   ngOnInit() {
     this.pokemons = POKEMONS;
   }
+
+  onClick() {
+    console.log('clic!');
+  }
+
   selectPokemon(pokemon: Pokemon) {
     alert("Pokemon sélectionné : " + pokemon.name);
   }
