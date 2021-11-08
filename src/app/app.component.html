@@ -1,11 +1,4 @@
 <h1>{{ title }}</h1>
-<ul>
-  <li>Poke1</li>
-  <li>Poke2</li>
-  <li>Poke3</li>
-</ul>
 
-<button (click)="onClick()">Cliquez ici !</button>
-
-<input #box (keyup)="onKey(box.value)">
-<p>Bonjour {{ userName }}</p>
+<input #box (keyup.enter)="values=box.value">
+<p>{{ values }}</p>
