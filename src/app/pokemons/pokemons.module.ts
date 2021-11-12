@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PokemonRoutingModule } from './pokemons-routing.module'
+import { PokemonRoutingModule } from './pokemons-routing.module';
+import { Pokemon } from './pokemon';
+import { POKEMONS } from './mock-pokemons';
 
 import { ListPokemonComponent } from './list-pokemon.component';
 import { DetailPokemonComponent } from './detail-pokemon.component';
